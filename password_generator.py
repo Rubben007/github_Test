@@ -23,7 +23,7 @@ if __name__ == "__main__":
         use_specials = input("use_specials? (y/n): ").lower() == "y"
         
         generated_password = generate_password(password_length, use_uppercase, use_lowercase, use_digit, use_specials)
-        print(f"Generated_password", {generated_password})
+        print(f"Generated_password", generated_password)
     except ValueError:
         print("enter a valid password length")
 
