@@ -1,0 +1,44 @@
+def add(x, y):
+    return(x + y)
+
+def xplication(x, y):
+    return(x * y)
+
+def subtraction(x, y):
+    return(x - y)
+
+def division(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "number cannot be divided by zero"
+        
+
+def simple_calculator():
+    print("welcome to the Rubbis simple calulator\npress 1 for addition\npress 2 for xplication\npress 3 for subtraction\npress 4 for division")
+    1 == "+"
+    2 == "*"
+    3 == "-"
+    4 == "/"
+    operator = (input("enter the operator (1, 2, 3, 4): "))
+    number1 = int(input("enter the first_number: "))
+    number2 = int(input("enter the second_number: "))
+   
+    
+    if operator == "1":
+        result = add(number1, number2)
+    elif operator == "2":
+        result = xplication(number1, number2)
+    elif operator == "3":
+        result = subtraction(number1, number2)
+    elif operator == "4":
+        result = division(number1, number2)
+    else:
+        return "invalide operation"
+    
+    print(f"Result {result}")
+    
+    
+simple_calculator()
+    
+    
